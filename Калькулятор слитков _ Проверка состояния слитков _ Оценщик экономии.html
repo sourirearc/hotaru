@@ -1,0 +1,475 @@
+
+<!-- saved from url=(0040)https://elviec.github.io/lop/ingots.html -->
+<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Калькулятор слитков |  Проверка состояния слитков |  Оценщик экономии</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingots Calculator : How much ingots I can save from Legend of Phoenix?">
+    <link href="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/bulma.min.css" rel="stylesheet">
+
+    <link href="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/bulma-tooltip.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/translateelement.css"></head>
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="основная навигация">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://elviec.github.io/lop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          LOP Элви
+        </font></font></a>
+      <a role="button" class="navbar-burger" id="burger" aria-label="меню" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="nav-links">
+        <div class="navbar-start">
+          <a class="navbar-item" href="https://elviec.github.io/lop/intimacy.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Калькулятор близости
+          </font></font></a>
+    
+          <a class="navbar-item" href="https://elviec.github.io/lop/promote.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Одежда слуги
+          </font></font></a>
+
+          <a class="navbar-item" href="https://elviec.github.io/lop/ingots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Калькулятор слитков
+          </font></font></a>
+    </div>
+  </div></nav>
+    <div>
+      <h1 class="title has-text-centered"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Калькулятор слитков V2.1</font></font></h1>
+
+      <div class="container mt-4 mb-4">
+        <fieldset class="box">
+          <legend class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ежедневно</font></font></legend>
+          <div class="field mb-5">
+            <label class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kunninggong</font></font></label>
+            <div class="control">
+              <input class="input" id="kunningkong" type="number" min="0" pattern="[0-9]*">
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Количество слитков, которые вы зарабатываете за день при приветствии.</font></font></p>
+          </div>
+          <div class="field">
+            <label class="checkbox">
+              <input type="checkbox" id="monthly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Ежемесячный абонемент (100 слитков)
+            </font></font></label>
+          </div>
+
+          <div class="field mb-5">
+            <label class="checkbox is-rounded">
+              <input type="checkbox" id="lifetime"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Lifetime Pass (120 слитков)
+            </font></font></label>
+          </div>
+
+          <div class="field mb-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Приблизительно 30 слитков дохода от исправительно-трудового лагеря.
+            </font></font><div class="control">
+              <label class="radio">
+                <input type="radio" name="labour" value="1" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Ежедневно
+              </font></font></label>
+
+              <label class="radio">
+                <input type="radio" name="labour" value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Каждые 2 дня.
+              </font></font></label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            <div class="select">
+              <select id="building">
+                <option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ежедневное здание гильдии</font></font></option>
+                <option value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Базовое здание (10 слитков)</font></font></option>
+                <option value="50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Промежуточное здание (50 слитков)</font></font></option>
+                <option value="200"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Продвинутое здание (200 слитков)</font></font></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Ежедневная покупка дополнительных токенов edu
+            </font></font><div class="control">
+              <label class="radio">
+                <input type="radio" name="edutokens" value="0" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Никто
+              </font></font></label>
+
+              <label class="radio">
+                <input type="radio" name="edutokens" value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Один раз
+              </font></font></label>
+              <label class="radio">
+                <input type="radio" name="edutokens" value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Дважды
+              </font></font></label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            <div class="select">
+              <select id="academyslots">
+                <option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Количество слотов Академии</font></font></option>
+                <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></option>
+                <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></option>
+                <option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></option>
+                <option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></option>
+                <option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></option>
+                <option value="6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></option>
+                <option value="7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></option>
+                <option value="8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></option>
+                <option value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
+                <option value="11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></option>
+                <option value="12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Ежедневная покупка жетонов почтовых ящиков (Pigeon Loft)
+            </font></font><div class="control">
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="0" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Никто
+              </font></font></label>
+
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Один раз
+              </font></font></label>
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Дважды
+              </font></font></label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            <div class="select">
+              <select id="pigeonslots">
+                <option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Количество слотов для голубей</font></font></option>
+                <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></option>
+                <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></option>
+                <option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></option>
+                <option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></option>
+                <option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></option>
+                <option value="6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></option>
+                <option value="7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></option>
+                <option value="8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></option>
+                <option value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
+                <option value="11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></option>
+                <option value="12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field mb-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Ежедневная покупка белых роз
+            </font></font><div class="control">
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="0" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Никто
+              </font></font></label>
+
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                10
+              </font></font></label>
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                20
+              </font></font></label>
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="30"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                30
+              </font></font></label>
+            </div>
+          </div>
+
+          <div class="field mb-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Ежедневная покупка жетона гильдии (VIP 5 и выше)
+            </font></font><div class="control">
+              <label class="radio">
+                <input type="radio" name="guildtoken" value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                да
+              </font></font></label>
+
+              <label class="radio">
+                <input type="radio" name="guildtoken" value="0" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Нет
+              </font></font></label>
+            </div>
+          </div>
+
+          <div class="field mb-4">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ежедневная покупка дополнительных ходов в Rare Beast Hunt</font></font></p>
+            <div class="select">
+              <select id="beastHuntTurns">
+                <option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Никто</font></font></option>
+                <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></option>
+                <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></option>
+                <option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></option>
+                <option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></option>
+                <option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="box">
+          <legend class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Еженедельно</font></font></legend>
+          <div class="field mb-4">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ежедневная покупка дополнительных ходов в Полях</font></font></p>
+            <div class="select">
+              <select id="fieldTurns">
+                <option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Никто</font></font></option>
+                <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></option>
+                <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></option>
+                <option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></option>
+                <option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></option>
+                <option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></option>
+                <option value="6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></option>
+                <option value="7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></option>
+                <option value="8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></option>
+                <option value="9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></option>
+              </select>
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Это событие происходит 5 дней в неделю, оно будет добавлено за вас.
+            </font></font></p>
+          </div>
+          <div class="field mb-4">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Покупка ограниченного количества ингредиентов на ферме (по 5 каждого)</font></font></p>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="abalone" value="abalone"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Baby Abalone
+              </font></font></label>
+            </div>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="scallop" value="scallop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Детские гребешки
+              </font></font></label>
+            </div>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="seacucumber" value="seacucumber"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Детский морской огурец
+              </font></font></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="box">
+          <legend class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Цикл (24 дня)</font></font></legend>
+          <div class="field">
+            <label class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Браки во время Доминанта</font></font></label>
+            <div class="control">
+              <input class="input" id="marriage" type="number" min="0" max="60" pattern="[0-9]*">
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Количество выдаваемых замуж детей (не более 60).</font></font></p>
+          </div>
+
+          <div class="field">
+            <label class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">История Глава</font></font></label>
+            <div class="control">
+              <input class="input" id="chapter" type="number" min="0" pattern="[0-9]*">
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Количество глав рассказа, которые вы можете очистить в цикле.
+            </font></font></p>
+          </div>
+
+          <div class="field">
+            <label class="label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Банкетный Хостинг</font></font></label>
+            <div class="control">
+              <input class="input" id="smallBanquet" type="number" min="0" pattern="[0-9]*" placeholder="введите номер малого банкета">
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Количество небольших банкетов, которые вы можете проводить за цикл.
+            </font></font></p>
+            <div class="control">
+              <input class="input" id="largeBanquet" type="number" min="0" pattern="[0-9]*" placeholder="введите номер большого банкета">
+            </div>
+            <p class="help"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Количество больших банкетов, которые вы можете проводить за цикл.
+            </font></font></p>
+          </div>
+
+          <div class="field mb-4">
+            <label class="checkbox">
+              <input type="checkbox" id="palace" checked="checked"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Продвинутое здание во время Palace Celebrity (5 дней)
+            </font></font></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-link ml-4" onclick="calculate()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Рассчитать
+            </font></font></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Результат:</font></font></p>
+            <button class="delete" aria-label="close" onclick="toggleModal()"></button>
+          </header>
+          <section class="modal-card-body">
+            <h2 class="is-size-5 has-text-weight-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ежедневно</font></font></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Максимальный потенциальный доход: </font></font><span id="dailyMaxIncome"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">500 слитков.</font></font></span>
+            </p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Мин. Затраты: </font></font><span id="dailyMinSpending"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">200 слитков.</font></font></span></p>
+            <h2 class="is-size-5 has-text-weight-bold mt-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Еженедельно</font></font></h2>
+            <p>
+              Max Potential Income :
+              <span id="weeklyMaxIncome">500 ingots</span>
+            </p>
+            <p>Min Spending : <span id="weeklyMinSpending">200 ingots</span></p>
+            <h2 class="is-size-5 has-text-weight-bold mt-2">Cycle (24 days)</h2>
+            <p>
+              Max Potential Income : <span id="cycleMaxIncome">500 ingots</span>
+            </p>
+            <p>Min Spending : <span id="cycleMinSpending">200 ingots</span></p>
+
+            <p class="is-size-5 has-text-weight-bold mt-2">
+              You could save <span id="cycleSaving">0</span> after 24 days.
+            </p>
+            <p class="is-size-6 has-text-weight-bold" id="status"></p>
+            <hr>
+
+            <p class="mt-2 is-italic">Additional Info about your spending:</p>
+            <div>
+              Further Edu Tokens :
+              <span id="edutokens">0</span> per week
+            </div>
+            <div>
+              Mailbox Tokens :
+              <span id="pigeontokens">0</span> per week
+            </div>
+            <p>White Roses : <span id="whiteroses">0</span> per week</p>
+            <p>Field Extra Turns : <span id="fields">0</span> per week</p>
+            <p>Rare Beast Hunt: <span id="beasthunt">0</span> per week</p>
+            <p>Baby Seafood : <span id="seafoodcost">0</span> per week</p>
+            <p>
+              Banquet Hosting Cost: <span id="banquethostingcost">0</span> per
+              cycle
+            </p>
+            <p>
+              Guild Building Cost: <span id="guildbuildingcost">0</span> per
+              cycle
+            </p>
+            <hr>
+            <p class="is-italic">
+              Calculation is based on the following projections:
+            </p>
+
+            <h3 class="has-text-weight-bold">Daily Income:</h3>
+            <div class="icon-text">
+              <span>Kunninggong</span>
+              <span class="icon has-text-info" data-tooltip="amount you enter" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Monthly Pass</span>
+              <span class="icon has-text-info" data-tooltip="100 ingots per day" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Lifetime Pass</span>
+              <span class="icon has-text-info" data-tooltip="120 ingots per day" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Daily Worship</span>
+              <span class="icon has-text-info" data-tooltip="70 ingots per day" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Timed Login</span>
+              <span class="icon has-text-info" data-tooltip="100 ingots every day" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Daily Quests</span>
+              <span class="icon has-text-info" data-tooltip="30 ingots every day" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Hard Labour Camp</span>
+              <span class="icon has-text-info" data-tooltip="30 ingots everyday or every 2 days" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <h3 class="has-text-weight-bold mt-2">Weekly Income</h3>
+            <div class="icon-text">
+              <span>Weekly Salary</span>
+              <span class="icon has-text-info" data-tooltip="50 ingots per week" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <div class="icon-text">
+              <span>Weekly FB Share</span>
+              <span class="icon has-text-info" data-tooltip="50 ingots per week" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <div class="icon-text">
+              <span>Perks/VIP Login</span>
+              <span class="icon has-text-info" data-tooltip="100 ingots per week" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <h3 class="has-text-weight-bold mt-2">Cycle Income</h3>
+            <div class="icon-text">
+              <span class="has-text-left">Marriages</span>
+              <span class="icon has-text-info" data-tooltip="20 ingots per marriage" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Story Chapters</span>
+              <span class="icon has-text-info" data-tooltip="100 ingots per cleared chapter" onclick="">
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            Made with Love by Elvie AS.53 in collaboration with
+            <a href="https://discord.gg/cjwnd8dCQY">
+              &nbsp;LOP Unofficial Community</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/menu.js.Без названия"></script>
+    <script src="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/ingots.js.Без названия"></script>
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com/" target="_blank">
+      <img src="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/counter.php" title="Бесплатный счетчик" alt="веб-счетчик" border="0"></a><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Калькулятор слитков _ Проверка состояния слитков _ Оценщик экономии_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+  
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
